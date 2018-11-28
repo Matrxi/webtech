@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE library [
+<!ELEMENT library (bname,bid,bauthor,bissuedto)>
+<!ELEMENT bname (#PCDATA)>
+<!ELEMENT bid (#PCDATA)>
+<!ELEMENT bauthor (#PCDATA)>
+<!ELEMENT bissuedto (#PCDATA)>
+]>
+<library>
+    <bname>MySQL</bname>
+    <bid>101</bid>
+    <bauthor>O'Rilley</bauthor>
+    <bissuedto>Rishabh</bissuedto>
+</library>
