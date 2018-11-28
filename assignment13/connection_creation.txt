@@ -1,0 +1,13 @@
+<?php
+echo "Creating a Connection <br/>" ;
+
+	if($con= mysqli_connect("localhost:3306","root",""))
+	{
+		echo "Connection Established <br/>";
+	}
+	else
+	{	
+		die("Connection Failed" . mysqli_error());
+	}
+	mysqli_close($con);
+?>
