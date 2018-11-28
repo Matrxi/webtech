@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Strings in PHP</title>    
+</head>    
+
+<body>
+    <h2>Making use of Strings in PHP</h2>
+    <?php 
+        $name="RISHABH";
+        $lower = strtolower($name);
+        $upper = strtoupper($name);
+        echo "<ul><li><h3>strtolower() Function </h3></li>String in lower case = $lower <br />";
+        echo "<li><h3>strtoupper() Function </h3></li>String in upper case = $upper <br />";
+        echo "<li><h3> . Concatenation </h3></li>Concatenating the uppercase with the lowercase = ".$upper.$lower;
+        echo "<li><h3>Comparing == </h3></li>Comparing $lower and $upper ";
+        if($lower == $upper)
+        {
+            echo "$lower and $upper are equal <br/>";
+        }
+        else
+        {
+            echo "$lower and $upper aren't equal<br />";
+        }
+        echo "</br>Comparing $name and $upper ";
+        if($name == $upper)
+        {
+            echo "$name and $upper are equal <br/>";
+        }
+        else
+        {
+            echo "$name and $upper aren't equal<br />";
+        }
+        echo "<li><h3>strstr() Function </h3></li>String after first occurence of A in $upper = ".strstr($name, "A")."<br/>";
+        echo "<li><h3>substr() Function </h3></li>Sub-String after 3rd alphaber in $upper = ".substr($name, 3)."<br/>";
+    ?>  
+</body>
+    
+</html>
