@@ -1,0 +1,30 @@
+<?php
+echo "Creating a Connection <br/>" ;
+
+	if($con= mysqli_connect("localhost:3306","root",""))
+	{
+		echo "Connection Established <br/>";
+        if(mysqli_select_db($con,"gehu"))
+        {
+            echo "Database selected successfully";
+            $q="Create table course(cname varchar(15), cid varchar(15), cduration varchar(15))";
+            if(mysqli_query($con,$q))
+            {
+                echo"<br />Table created successfully <br/>";
+            }
+            else
+            {
+                die ("<br />Table creation failed" . mysqli_error($con)) ;
+            }
+        }
+        else
+        {
+            die("<br />Database Selection Failed". mysqli_error($con));
+        }
+    }
+	else
+	{	
+		die("<br />Connection Failed" . mysqli_error($con));
+	}
+	mysqli_close($con);
+?>
