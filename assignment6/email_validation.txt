@@ -71,7 +71,7 @@ Form Validator
 
 <fieldset>
 <legend> Form </legend>
-<form name = "form" method = "post" action = "form_2.html" onsubmit = "return validator(form)">
+<form name = "form" method = "post" action = "email_validation.html" onsubmit = "return validator(form)">
 	<p>Email : <input type="text" name= "email" placeholder = "Enter email address"></p>
 	<p>Digit : <input type="text" name= "digit" placeholder = "Enter digit"></p>
 	<p>Empty Validation : <input type="text" name= "empty" placeholder = "leave it empty"></p>
