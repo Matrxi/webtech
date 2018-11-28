@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Do and do while loop in PHP</title>    
+<title>For each loop in PHP</title>    
 </head>    
 
 <body>
