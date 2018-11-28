@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Strings in PHP</title>    
+</head>    
+
+<body>
+    <h2>Making use of Operators in PHP</h2>
+    <?php 
+        $value1=100;
+        $value2=200;
+        $value3=100.0;
+        $anstrue=False;
+        echo "<ul><li><h3>+ Operator </h3></li> Sum of $value1 and $value2 = ".($value1+$value2)."<br />";
+        echo "<li><h3>% Operator </h3></li>Remainder when $value1 is divided by $value2 = ".($value1%$value2)."<br />";
+        echo "<li><h3>++ Increment Operator</h3></li>Increasing value of $value2 by 1 = ".(++$value2)."<br />";
+        echo "<li><h3>Comparing == </h3></li>Comparing $value1 and $value3.0 <br />";
+        if($value1 == $value3)
+        {
+            echo "$value1 and $value3.0 are equal <br/>";
+        }
+        else
+        {
+            echo "$value1 and $value3.0 aren't equal<br />";
+        }
+        echo "<li><h3>Comparing === </h3></li>Comparing $value1 and $value3.0 <br/>";
+        if($value1 === $value2)
+        {
+            echo "$value1 and $value3.0 are equal <br/>";
+        }
+        else
+        {
+            echo "$value1 and $value3.0 aren't equal<br />";
+        }
+        echo "<li><h3>! Operator </h3></li>!False = ".!$anstrue."<br/>";
+    ?>  
+</body>
+    
+</html>
