@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    Dialog boxes
+    </title>
+    
+    <style>
+        div{
+            text-align: center;
+        }
+    </style>
+    
+    <script>
+    function alertBox()
+        {
+            alert("This is an alert box");
+        }
+        
+    function promptBox()
+        {
+            var name=prompt("What is your name ? ");
+            if(name!=null)
+                alert("Your name is " +name);
+            else
+                alert("Please enter your name next time");  
+        }
+        
+    function confirmBox()
+        {
+            confirm("This is a confirm box");
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Showing Different Dialog boxes</h2>
+    <div>
+    <button onClick="alertBox()">Alert Dialog Box</button>
+    <button onclick="promptBox()">Prompt Dialog Box</button>
+    <button onclick="confirmBox()">Confirm Dialog Box</button>
+    </div>
+</body>
+    
+</html>
