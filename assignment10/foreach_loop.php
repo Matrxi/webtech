@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Do and do while loop in PHP</title>    
+</head>    
+
+<body>
+    <h2>Using for each loop to print upto 10</h2>
+    <?php 
+        $arr=array(1,2,3,4,5,6,7,8,9,10);
+        foreach($arr as $value)
+        {
+            echo "$value <br/>";
+        }
+        
+    ?>  
+</body>
+    
+</html>
