@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <meta charset="utf-8">
+        <title>STUDENT REGISTRATION FORM</title>
+        <style>
+            h1 {
+                font-family: calibri;
+                color: rebeccapurple;
+                text-align: center;
+                text-decoration: underline;
+                font-size: 25pt;         
+                font-style: normal; 
+            }
+            table {
+                font-family: calibri;
+                font-size: 15pt; 
+                color: white;
+                font-style: normal;
+                font-weight: bold;
+                background-color: slateblue;
+                border-collapse: collapse; 
+                border: 2px solid navy;
+            }
+            table.inner {
+                border: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>STUDENT REGISTRATION FORM</h1>
+        <table align="center" cellpadding = "10">
+            <tr>
+                <td>First Name :</td>
+                <td><input type="text" name="First_Name" maxlength="30" placeholder="Enter First Name" required/></td>
+            </tr>
+            <tr>
+                <td>Middle Name :</td>
+                <td><input type="text" name="Middle_Name" maxlength="30" placeholder="Enter Middle Name"/></td>
+            </tr>
+            <tr>
+                <td>Last Name :</td>
+                <td><input type="text" name="Last_Name" maxlength="30" placeholder="Enter Last Name"/></td>
+            </tr>
+            <tr>
+                <td>Date Of Birth(D.O.B) :</td>
+                <td>
+                    <input type="date" name="bday" required placeholder="Enter date of birth">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Email ID :</td>
+                <td><input type="email" name="Email_Id" maxlength="100" required placeholder="Enter email"/></td>
+            </tr>
+            <tr>
+                <td>Mobile Number :</td>
+                <td><input type="number" name="Mobile_number" maxLength="10" placeholder="Enter Mobile number"></td>
+            </tr>
+            <tr>
+                <td>Gender :</td>
+                <td><input type="radio" name="gender" value="male" checked> <b>Male</b>
+                    <input type="radio" name="gender" value="female"><b>Female</b>
+                    <input type="radio" name="gender" value="other"><b>Other</b>
+                </td>
+            </tr>
+            <tr>
+                <td>ADDRESS :<br><br><br></td>
+                <td><textarea name="Address" rows="4" cols="30" placeholder="Enter Permanent Address"></textarea></td>
+            </tr>
+            <tr>
+                <td>City :</td>
+                <td><input type="text" name="City" maxlength="30" placeholder="Enter City"/></td>
+            </tr>
+            <tr>
+                <td>Pin Code :</td>
+                <td><input type="number" name="Pin_code" maxlength="10" placeholder="Enter Pindcode"/></td>
+            </tr>
+            <tr>
+                <td>State :</td>
+                <td><input type="text" name="State" maxlength="30" placeholder="Enter State"/></td>
+            </tr>
+            <tr>
+                <td>Hobbies :<br><br><br></td>
+                <td><textarea name="Address" rows="2" cols="30" placeholder="Enter your hobbies"></textarea></td>
+            </tr>
+            <tr>
+                <td>Course Applied For :</td>
+                <td>
+                    <select name="Courses" id="Courses">
+                    <option value="-1">Courses:</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA2">MCA</option>
+                    <option value="B.tech">B.tech</option>
+                    <option value="B.COM">B.COM</option>
+                    <option value="BCA">BCA</option>
+                    <option value="B.SC.(IT)">B.SC.(IT)</option>
+                    <option value="BA">BA</option>
+                    <option value="FASHION DESIGNING">FASHION DESIGNING</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
