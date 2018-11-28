@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!ELEMENT library (bname,bid,bauthor,bissuedto)>
+<!ELEMENT bname (#PCDATA)>
+<!ELEMENT bid (#PCDATA)>
+<!ELEMENT bauthor (#PCDATA)>
+<!ELEMENT bissuedto (#PCDATA)>

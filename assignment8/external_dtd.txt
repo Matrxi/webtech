@@ -1,0 +1,17 @@
+<!-- external_dtd.dtd code -->
+<?xml version="1.0"?>
+<!ELEMENT library (bname,bid,bauthor,bissuedto)>
+<!ELEMENT bname (#PCDATA)>
+<!ELEMENT bid (#PCDATA)>
+<!ELEMENT bauthor (#PCDATA)>
+<!ELEMENT bissuedto (#PCDATA)>
+
+<!-- external_dtd.xml code -->
+<?xml version="1.0"?>
+<!DOCTYPE library SYSTEM "external_dtd.dtd">
+<library>
+    <bname>PHP</bname>
+    <bid>104</bid>
+    <bauthor>Veronica Ross</bauthor>
+    <bissuedto>NULL</bissuedto>
+</library>
