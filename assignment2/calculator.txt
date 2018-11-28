@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    
+    <script>
+        var ans,num1,num2;
+        function add(frm)
+        {
+            num1= frm.n1.value;
+            num2= frm.n2.value;
+            ans=parseInt(num1)+parseInt(num2);
+            alert("Answer = "+ans);            
+        }
+        function sub(frm)
+        {
+            num1= frm.n1.value;
+            num2= frm.n2.value;
+            ans=num1-num2;
+            alert("Answer = "+ans);
+        }
+        function mul(frm)
+        {
+            num1= frm.n1.value;
+            num2= frm.n2.value;
+            ans=num1*num2;
+            alert("Answer = "+ans);
+        }
+        function div(frm)
+        {
+            num1= frm.n1.value;
+            num2= frm.n2.value;
+            ans=num1/num2;
+            alert("Answer = "+ans);
+        }
+        function mod(frm)
+        {
+            num1= frm.n1.value;
+            num2= frm.n2.value;
+            ans=num1%num2;
+            alert("Answer = "+ans);
+        }
+    </script>
+    
+    <style>
+        form{
+            text-align: center;
+        }
+        
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+    
+<body>
+    <h2 style="text-align:center">Calculator</h2>
+    <form action="" method="get" name= "numberForm">
+        <input type="number" name="n1" placeholder="Enter a number" >
+        <input type="number" name="n2" placeholder="Enter a number" >
+        <br /><br />
+        <button onclick="add(numberForm)">+</button>
+        <button onclick="sub(numberForm)">-</button>
+        <button onclick="mul(numberForm)">*</button>
+        <button onclick="div(numberForm)">/</button>
+        <button onclick="mod(numberForm)">%</button>
+    </form>
+</body>
+</html>
