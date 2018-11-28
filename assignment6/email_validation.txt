@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Form Validator 
+</title>
+
+<style type = "text/css">
+	fieldset { 
+		text-align : center;
+        width : 40%;
+		margin : 0 auto;
+		
+	}
+	
+	h2,form{
+		text-align : center;
+	}
+	
+
+</style>
+
+
+<script type = "text/javascript">
+	function validator(frm)
+	{
+		var email = frm.email.value;
+		var digit = frm.digit.value;
+		var empty = frm.empty.value;
+		var username = frm.username.value;
+		
+		var apros = email.indexOf('@');
+		var dotpos = email.indexOf('.');
+		if(apros < 1 || (dotpos -apros) < 2)
+		{
+			alert("Enter valid Email Address.");
+			frm.email.focus();
+			return false;
+		}
+		
+		var digit_pattern = /^[0-9]+$/;
+		if((digit_pattern.test(digit)) == false)
+		{
+			alert("Digit field contains something else too or is empty");
+			frm.digit.focus();
+			return false;
+		}
+		
+		var empty_pattern = /^$/;
+		if((empty_pattern.test(empty)) == false)
+		{
+			alert("Told you to leave this field empty");
+			frm.empty.focus();
+			return false;
+		}
+		
+		var username_pattern = /^[0-9 a-z A-Z]{8,}$/;
+		if((username_pattern.test(username)) == false)
+		{
+			alert("Enter valid username");
+			frm.username.focus();
+			return false;
+		}
+		
+	}
+
+</script>
+</head>
+<body>
+<h2>Form Validator</h2>
+
+<fieldset>
+<legend> Form </legend>
+<form name = "form" method = "post" action = "form_2.html" onsubmit = "return validator(form)">
+	<p>Email : <input type="text" name= "email" placeholder = "Enter email address"></p>
+	<p>Digit : <input type="text" name= "digit" placeholder = "Enter digit"></p>
+	<p>Empty Validation : <input type="text" name= "empty" placeholder = "leave it empty"></p>
+	<p>Username Validation : <input type="text" name= "username" placeholder = "Enter Username less than 8"></p>
+	<p><input type= "submit" value = "SUBMIT"></p>
+</form>
+</fieldset>
+
+</body>
+</html>
