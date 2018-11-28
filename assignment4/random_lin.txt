@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+    Random Link Generator
+    </title>    
+    
+    <style>
+        div{
+            text-align: center;
+        }
+    </style>
+    
+    <script>
+        function randomGenerate()
+        {
+            var num = Math.random(1);
+            if(num > 0.5)
+                {
+                    window.open('https://www.gehu.ac.in', '_self');
+                }
+            else
+                {
+                    window.open('https://www.geu.ac.in', '_self');
+                }
+        }
+    </script>
+</head>
+    
+<body>
+    <div>
+    <h2>This is a Random Link Generator</h2>
+    <h3>CLick on the button below to enter any of the two websites of GEHU or GEU</h3>
+    <button onclick="randomGenerate()">Click to open a random site</button>   
+    </div>
+</body>
+</html>
