@@ -1,0 +1,22 @@
+<?php
+echo "Creating a Connection <br/>" ;
+
+	if($con= mysqli_connect("localhost:3306","root",""))
+	{
+		echo "Connection Established <br/>";
+		if(mysqli_query($con,"Create database gehu"))
+		{
+			echo "Database Created <br/>";
+			mysqli_select_db($con,"gehu");
+		}
+		else
+		{
+			echo "Database Failed to create";
+		}
+	}
+	else
+	{	
+		die("Connection Failed" . mysqli_error());
+	}
+	mysqli_close($con);
+?>
